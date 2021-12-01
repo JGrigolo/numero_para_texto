@@ -64,8 +64,3 @@ def por_extenso(n):
     
     elif n >= 100000000 and n <= 999999999:
         return(centenas[(n-100000000)//100000000]) + (" e " + por_extenso(n % 100000000) if n % 1000000 !=0 else " milhões")
-
-
-
-num = input("Digite um número de 0 a 999999999: ")
-print(por_extenso(int(num)))
